@@ -7,10 +7,9 @@ function changeColor(alpha) {
   hole.style.backgroundColor = `hsl(${alpha}, 70%, 40%)`;
 }
 
-function changeVerticalPosition(beta, alpha) {
+function changeVerticalPosition(beta) {
   var rect = marble.getBoundingClientRect();
   var y = rect.top;
-  console.log(y)
   if (beta >= 5){
       if (y > 405) y = 405;
       marble.style.top = `${y+3}px`;
@@ -20,10 +19,9 @@ function changeVerticalPosition(beta, alpha) {
   }
 }
 
-function changeHorizontalPosition(gamma, alpha) {
+function changeHorizontalPosition(gamma) {
   var rect = marble.getBoundingClientRect();
   var x = rect.left;
-  console.log(x)
   if (gamma >= 5){
     if (x > 255) x = 255;
     marble.style.left = `${x+3}px`;
